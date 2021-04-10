@@ -2,7 +2,7 @@
 
 require_once 'PHPMailer/PHPMailerAutoload.php';
 
-$mailer = new PHPMailer();
+$mail = new PHPMailer();
 $mail->isSMTP();
 $mail->SMTPAuth = true;
 $mail->SMTPSecure = 'ssl';
