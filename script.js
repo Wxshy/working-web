@@ -1,4 +1,4 @@
-var pages = ['home', 'about', 'gallery', 'contact']
+var pages = ['home', 'about', 'gallery', 'contact'];
 
 function loadNavBar() {
     document.getElementById('home').style.display = 'block';
