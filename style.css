@@ -5,10 +5,6 @@ body {
     height: auto;
 }
 
-h1 {
-    padding-left: 150px;
-    color: #c5c6c5;
-}
 
 svg {
     width: calc(100vw - 461px);
@@ -16,52 +12,63 @@ svg {
 }
 
 nav {
-    font-family: 'Raleway', 'sans-serif';
     background: rgba(49, 36, 64, 0.2);
-    width: 60px;
+    width: 3vw;
     height: 100vh;
-    padding-top: 5%;
     position: fixed;
     top: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: 0.3s;
 }
 
 nav ul {
     position: relative;
-    padding-top: 5%;
+    padding-top: 25vh;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-left: 0.7vw;
+    padding-right: 0;
     overflow: hidden;
 }
 
 nav li {
     position: relative;
-    padding-top: 150%;
-    padding-left: 15px;
-    padding-right: 5px;
-    float: left;
+    padding-top: 3.5vh;
+    padding-bottom: 3.5vh;
+    width:fit-content;
+    height: fit-content;
+    transition: 0.5s;
 }
 
-nav li a {
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    line-height: 51px;
-    height: fit-content;
-}
+
 
 nav li a img {
-    display: none;
+    display: inline;
     height: 30px;
     width: 30px;
 }
+.navtext{
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 30px;
+    float: right;
+    display: none;
+    color: whitesmoke;
+    transition-duration: 100s;
+}
 
-nav li a:hover {
-    background-color: rgba(208, 245, 245, );
-    color: lightpink;
+nav:hover{
+    width: 40vh;
+}
+
+nav:hover .navtext{
+    display: inline;
+    padding-left: 40px;
+}
+
+nav li:hover {
+    background-color: rgba(208, 245, 245, 0.3);
 }
 
 
@@ -71,6 +78,14 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+#about{
+    display:none;
+}
+
+#gallery{
+    display:none;
+    
+}
 
 /* Hide scrollbar for IE and Edge */
 
@@ -191,3 +206,11 @@ body {
         transform: translateX(25%);
     }
 }
+
+.bg-about{
+    background-image: linear-gradient(-60deg, rgb(233, 88, 197) 50%, #09f 50%);
+    opacity: 0.5;
+    top: 0;
+    z-index:-1;
+}
+
