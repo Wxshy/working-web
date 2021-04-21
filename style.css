@@ -1,3 +1,8 @@
+#uc{
+    padding: 100px;
+    font-family: 'Raleway', 'sans-serif';
+}
+
 body {
     background: #171622;
     margin: 0;
@@ -58,6 +63,7 @@ nav li a img {
 
 nav:hover {
     width: 40vh;
+    background: rgba(49, 36, 64, 0.9);
 }
 
 nav:hover .navtext {
@@ -79,18 +85,34 @@ body::-webkit-scrollbar {
 h1 {
     font-family: 'Raleway', 'sans-serif';
     color: whitesmoke;
+    padding-top: 5%;
     text-align: center;
+}
+
+h3{
+    font-family: 'Raleway', 'sans-serif';
+    color: whitesmoke;
+    padding: 5%;
+}
+
+h3 a{
+    text-decoration:none;
+    color: whitesmoke;
+    
 }
 
 p {
     font-family: 'Raleway', 'sans-serif';
-    padding: 10%;
     color: whitesmoke;
+    padding: 8%;
     text-align: center;
 }
 
 #about-image {
     padding: 10%;
+    padding-top: 5%;
+    height: 30%;
+    width: 30%;
     float: right;
 }
 
