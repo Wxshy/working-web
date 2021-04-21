@@ -6,11 +6,18 @@ function loadNavBar() {
         $.each($("nav li a img"), function(i, link) {
             $(link).fadeIn(2200);
         });
-        
+
     });
 };
 
 
-function switch_page(page){
+function switch_page(page) {
     document.getElementById(page).style.display = 'block';
+    for (let i = 0; i < pages.length; i++) {
+        if (pages[i] != page) {
+            document.getElementById(pages[i]).style.display = 'none';
+        } else {
+            document.getElementById(page).style.display = 'block';
+        }
+    }
 }
