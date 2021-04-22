@@ -1,7 +1,3 @@
-#uc{
-    padding: 100px;
-    font-family: 'Raleway', 'sans-serif';
-}
 
 body {
     background: #171622;
@@ -72,6 +68,7 @@ nav:hover .navtext {
 }
 
 nav li:hover {
+    cursor: pointer;
     background-color: rgba(208, 245, 245, 0.3);
 }
 
@@ -116,11 +113,25 @@ p {
     float: right;
 }
 
-#about {
+#home{
+    display: none;
+}
+
+#about {z
     display: none;
 }
 
 #gallery {
+    display: none;
+}
+
+#contact {
+    display: none;
+}
+
+#uc{
+    padding: 100px;
+    font-family: 'Raleway', 'sans-serif';
     display: none;
 }
 
@@ -243,11 +254,4 @@ body {
     100% {
         transform: translateX(25%);
     }
-}
-
-.bg-about {
-    background-image: linear-gradient(-60deg, rgb(233, 88, 197) 50%, #09f 50%);
-    opacity: 0.5;
-    top: 0;
-    z-index: -1;
 }

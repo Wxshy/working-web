@@ -1,4 +1,4 @@
-var pages = ['home', 'about', 'gallery', 'contact'];
+var pages = ['home', 'about', 'gallery', 'contact', 'uc'];
 
 function loadNavBar() {
     document.getElementById('home').style.display = 'block';
@@ -16,8 +16,7 @@ function switch_page(page) {
     for (let i = 0; i < pages.length; i++) {
         if (pages[i] != page) {
             document.getElementById(pages[i]).style.display = 'none';
-        } else {
-            document.getElementById(page).style.display = 'block';
-        }
+        };
+
     }
 }
