@@ -6,14 +6,9 @@ body {
     height: auto;
 }
 
-svg {
-    width: calc(100vw - 461px);
-    height: 295px;
-}
-
 nav {
     background: rgba(49, 36, 64, 0.2);
-    width: 3vw;
+    width: 57.6px;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -25,11 +20,11 @@ nav {
 
 nav ul {
     position: relative;
-    padding-top: 25vh;
+    top: 50%;
+    transform: translate(0, -50%);
     list-style-type: none;
     margin: 0;
-    padding-left: 0.7vw;
-    padding-right: 0;
+    padding-left: 25%;
     overflow: hidden;
 }
 
@@ -60,6 +55,10 @@ nav li a img {
 nav:hover {
     width: 40vh;
     background: rgba(49, 36, 64, 0.9);
+}
+
+nav:hover ul {
+    padding-left: 10%;
 }
 
 nav:hover .navtext {
@@ -124,71 +123,101 @@ p {
 body {
     -ms-overflow-style: none;
 }
+#sm-logo{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Raleway', 'sans-serif';
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    transition: 0.7s;
+}
 
-#logo {
+#lg-logo {
+    display: inline;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     animation: fill 0.5s ease forwards 2s;
     stroke-linecap: square;
+    height: 400px;
 }
 
-#logo path:nth-child(1) {
+@media screen and (max-width: 800px) {
+    #lg-logo{
+       display:none;
+    }
+
+    #sm-logo{
+       display:inline-block;
+    }
+}
+/*
+@media screen and (max-height: 800px) {
+    nav ul{
+        padding-top: 13vh;
+    }
+}
+*/
+#lg-logo path:nth-child(1) {
     stroke-dasharray: 435;
     stroke-dashoffset: 435;
     animation: line-anim 2s ease forwards;
 }
 
-#logo path:nth-child(2) {
+#lg-logo path:nth-child(2) {
     stroke-dasharray: 407;
     stroke-dashoffset: 407;
     animation: line-anim 2s ease forwards;
 }
 
-#logo path:nth-child(3) {
+#lg-logo path:nth-child(3) {
     stroke-dasharray: 577;
     stroke-dashoffset: 577;
     animation: line-anim 2s ease forwards;
 }
 
-#logo path:nth-child(4) {
+#lg-logo path:nth-child(4) {
     stroke-dasharray: 377;
     stroke-dashoffset: 377;
     animation: line-anim 2s ease forwards;
 }
 
-#logo path:nth-child(5) {
+#lg-logo path:nth-child(5) {
     stroke-dasharray: 405;
     stroke-dashoffset: 405;
     animation: line-anim 2s ease forwards;
 }
 
-#logo path:nth-child(6) {
+#lg-logo path:nth-child(6) {
     stroke-dasharray: 251;
     stroke-dashoffset: 251;
     animation: line-anim 2s ease forwards;
 }
 
-#logo path:nth-child(7) {
+#lg-logo path:nth-child(7) {
     stroke-dasharray: 777;
     stroke-dashoffset: 777;
     animation: line-anim 2s ease forwards;
 }
 
-#logo path:nth-child(8) {
+#lg-logo path:nth-child(8) {
     stroke-dasharray: 407;
     stroke-dashoffset: 407;
     animation: line-anim 2s ease forwards;
 }
 
-#logo path:nth-child(9) {
+#lg-logo path:nth-child(9) {
     stroke-dasharray: 322;
     stroke-dashoffset: 322;
     animation: line-anim 2s ease forwards;
 }
 
-#logo path:nth-child(10) {
+#lg-logo path:nth-child(10) {
     stroke-dasharray: 433;
     stroke-dashoffset: 433;
     animation: line-anim 2s ease forwards;
