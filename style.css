@@ -9,7 +9,7 @@ body {
 nav {
     background: rgba(49, 36, 64, 0.2);
     width: 57.6px;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     top: 0;
     display: flex;
@@ -127,6 +127,7 @@ body {
     color: whitesmoke;
     text-align: center;
     font-size: 100px;
+    padding-left: 20px;
     font-family: 'Raleway', 'sans-serif';
     position: fixed;
     top: 50%;
@@ -139,7 +140,7 @@ body {
 #lg-logo {
     display: inline;
     position: fixed;
-    top: 50%;
+    top: 50vh;
     left: 50%;
     transform: translate(-50%, -50%);
     animation: fill 0.5s ease forwards 2s;
@@ -156,13 +157,7 @@ body {
        display:inline-block;
     }
 }
-/*
-@media screen and (max-height: 800px) {
-    nav ul{
-        padding-top: 13vh;
-    }
-}
-*/
+
 #lg-logo path:nth-child(1) {
     stroke-dasharray: 435;
     stroke-dashoffset: 435;
