@@ -113,26 +113,9 @@ p {
     float: right;
 }
 
-#home{
-    display: none;
-}
-
-#about {
-    display: none;
-}
-
-#gallery {
-    display: none;
-}
-
-#contact {
-    display: none;
-}
-
 #uc{
     padding: 100px;
     font-family: 'Raleway', 'sans-serif';
-    display: none;
 }
 
 
