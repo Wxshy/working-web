@@ -9,3 +9,8 @@ function loadNavBar() {
     });
 
 };
+
+function nav_open(){
+    var navbar = document.getElementsByTagName('nav')[0];
+    navbar.focus();
+}
