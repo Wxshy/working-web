@@ -54,7 +54,8 @@ nav li a img {
 
 nav:hover, nav:focus {
     width: 40vh;
-    background: rgba(49, 36, 64, 0.9);
+    background: rgba(49, 36, 64);
+    opacity: 0.9;
 }
 
 nav:hover ul, nav:focus ul {

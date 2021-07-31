@@ -12,5 +12,12 @@ function loadNavBar() {
 
 function nav_open(){
     var navbar = document.getElementsByTagName('nav')[0];
+    var sm = document.getElementById('sm-logo');
+    if (sm != null) {sm.style.opacity = 0.2;};
     navbar.focus();
+}
+
+function changesmopacity() {
+    var sm = document.getElementById('sm-logo');
+    sm.style.opacity = 1;
 }
